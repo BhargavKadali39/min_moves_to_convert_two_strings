@@ -1,3 +1,5 @@
+#simple yet confusing
+
 def editMyStr(str1, str2, m, n):
     if m == 0:
         return n
@@ -9,9 +11,10 @@ def editMyStr(str1, str2, m, n):
                    editMyStr(str1, str2, m-1, n),
                    editMyStr(str1, str2, m-1, n-1))
 
-str1 = 'hello world'
+str1 = str(input('Enter string 1 :\n'))
 
-str2 = 'hello python'
+str2 = str(input('Enter string 2 :\n'))
 
 print(editMyStr(str1, str2, len(str1), len(str2)))
 
+#Don't give input very big,as it might get stuck in a loop for a long time.
